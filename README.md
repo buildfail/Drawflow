@@ -19,6 +19,7 @@ Installing only a javascript library and with four lines of code.
 
 ## Table of contents
 - [Features](#features)
+- [Step-By-Step Guide to Running the Project](#step-by-step)
 - [Installation](#installation)
   - [Running](#running)
 - [Mouse and  Keys](#mouse-and-keys)
@@ -55,6 +56,60 @@ Installing only a javascript library and with four lines of code.
 - Vanilla javascript (No dependencies)
 - NPM
 - Vue Support component nodes && Nuxt
+
+## Step-by-Step Guide to Running the Project
+1. Download or clone the repository.
+   Copy and paste this link in the terminal.
+   ``git clone https://github.com/jerosoler/Drawflow.git``
+
+3. Use the terminal to enter into the Drawflow folder (run all the following commands in the Drawflow folder).
+   ``cd Drawflow``
+
+4. Install necessary dependencies.
+   ``npm run install``
+
+5. Build the project.
+   ``npm run build``
+
+6. Start the development server.
+   ``npm run dev``
+  
+7. Open the project in your browser.
+   It might automatically open, or you can manually navigate to ``http://localhost:8080`` in your browser of choice.
+
+   The code that is displayed is in *index.html*.
+
+8. Explore Drawflow by dragging the elements on the left bar to the main working area. Drag one circle to another to create connection lines.
+   
+9. To start with a blank diagram, you can replace the code in index.html with:
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drawflow Example</title>
+  <link rel="stylesheet" type="text/css" href="src/drawflow.css" />
+  <link rel="stylesheet" type="text/css" href="docs/beautiful.css" />
+</head>
+<body>
+  <div id="drawflow"></div>
+  <script src="dist/drawflow.min.js"></script>
+  <script>
+    var id = document.getElementById("drawflow");
+    const editor = new Drawflow(id);
+    editor.start();
+
+    var html = '<div><input type="text" df-name></div>';
+    var data = { "name": 'example' };
+
+    editor.addNode('example', 0, 1, 150, 300, 'example', data, html);
+
+  </script>
+</body>
+</html>
+```
+See the documentation below for more options on how to add/remove Nodes, customize them, and add connections.
 
 ## Installation
 Download or clone repository and copy the dist folder, CDN option Or npm.  
