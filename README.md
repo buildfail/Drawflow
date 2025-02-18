@@ -19,7 +19,7 @@ Installing only a javascript library and with four lines of code.
 
 ## Table of contents
 - [Features](#features)
-- [Step-By-Step Guide to Running the Project](#step-by-step)
+- [Getting Started for Beginners]
 - [Installation](#installation)
   - [Running](#running)
 - [Mouse and  Keys](#mouse-and-keys)
@@ -57,7 +57,7 @@ Installing only a javascript library and with four lines of code.
 - NPM
 - Vue Support component nodes && Nuxt
 
-## Step-by-Step Guide to Running the Project
+## Getting Started for Beginners
 1. Download or clone the repository.
    Copy and paste this link in the terminal.
    ``git clone https://github.com/jerosoler/Drawflow.git``
@@ -109,7 +109,7 @@ Installing only a javascript library and with four lines of code.
 </body>
 </html>
 ```
-See the documentation below for more options on how to add/remove Nodes, customize them, and add connections.
+See the documentation below for more options on how to add/remove Nodes, customize options, add connections, and more.
 
 ## Installation
 Download or clone repository and copy the dist folder, CDN option Or npm.  
